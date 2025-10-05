@@ -1,8 +1,16 @@
 # asp_deploy_instruction
 
 ## for ubuntu
+first of all create a publish of project:
+```
+dotnet publish -c Release -o publish
+or
+dotnet publish YourProjectName.csproj -c Release -o publish
+```
 
-first create a service:
+and move it to your server destination.
+
+then create a service in ubuntu:
 ```
 sudo nano /etc/systemd/system/YourApp.service
 ```
