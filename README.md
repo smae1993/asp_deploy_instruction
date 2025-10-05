@@ -66,3 +66,9 @@ for restarting service:
 sudo systemctl daemon-reload
 sudo systemctl restart YourApp
 ```
+
+
+for database migration create a script and run it in database:
+```
+dotnet ef migrations script -o update.sql
+```
