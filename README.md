@@ -78,5 +78,10 @@ sudo systemctl restart YourApp
 
 for database migration create a script and run it in database:
 ```
+dotnet YourApp.dll -- --migrate
+or
+dotnet ef database update --no-build
+or
 dotnet ef migrations script -o update.sql
+
 ```
